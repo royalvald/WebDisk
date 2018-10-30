@@ -1,0 +1,10 @@
+G:\网盘设计\WebDisk\WebDisk\bin\Debug\WebDisk.exe.config
+G:\网盘设计\WebDisk\WebDisk\bin\Debug\WebDisk.exe
+G:\网盘设计\WebDisk\WebDisk\bin\Debug\WebDisk.pdb
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.csprojAssemblyReference.cache
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.Form1.resources
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.Properties.Resources.resources
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.csproj.GenerateResource.cache
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.csproj.CoreCompileInputs.cache
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.exe
+G:\网盘设计\WebDisk\WebDisk\obj\Debug\WebDisk.pdb
