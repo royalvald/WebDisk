@@ -21,17 +21,17 @@
         <div>
             <asp:MultiView ID="multiView1" runat="server">
                 <asp:View ID="view_configure" runat="server">
-                    上传文件格式:
+                    <!--上传文件格式:
                     <asp:BulletedList ID="fileType_list" runat="server">
                     </asp:BulletedList>
-                    <br />
+                    <br />-->
                     单个文件上传最大为:
                     <asp:Label ID="fileMaxsize" runat="server"></asp:Label>
                     网盘使用信息:
                     <asp:Label ID="disk_useInfo" runat="server"></asp:Label>
                 </asp:View>
 
-                <asp:View ID="view_Upload" runat="server">
+                <asp:View ID="view_Upload" runat="server" >
                     <asp:FileUpload ID="fileUpload" runat="server" Height="100" Width="200" />
                     <asp:Button ID="Upload_button" runat="server" Text="开始上传" OnClick="Upload_button_Click" />
                 </asp:View>
@@ -49,9 +49,13 @@
                     <asp:Button ID="fileDownload" runat="server" Text="文件下载" OnClick="fileDownload_Click" />
                     <asp:Button ID="fileDelete" runat="server" Text="文件删除" OnClientClick="return confirm('确定删除文件')" OnClick="fileDelete_Click" />
                     <asp:TextBox ID="file_newName" runat="server" Width="300px"></asp:TextBox>
-                    <asp:Button ID="file_rename" Text="重命名" runat="server" />
+                    <asp:Button ID="file_rename" Text="重命名" runat="server" OnClick="file_rename_Click" />
                  </asp:View>
             </asp:MultiView>
+        </div>
+
+        <div >
+            <asp:Label ID="navigation"
         </div>
     </form>
 </body>
