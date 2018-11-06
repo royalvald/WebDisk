@@ -1,0 +1,13 @@
+C:\Documents and Settings\Administrator\桌面\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.pdb
+C:\Documents and Settings\Administrator\桌面\WebFilesExplorer\WebFilesExplorer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
+C:\Documents and Settings\Administrator\桌面\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb
+C:\Documents and Settings\Administrator\桌面\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll.config
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.pdb
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csprojAssemblyReference.cache
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CoreCompileInputs.cache
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CopyComplete
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
+G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb
