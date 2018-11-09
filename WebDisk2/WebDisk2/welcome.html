@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>在线文件管理系统</title>
+    <link href="Views/htmlCss.css" rel="stylesheet" type="text/css" />
+    <style>
+       
+        #selectAll{
+            
+            width:30px;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            width: 1000px;
+            font-size: 10px;
+        }
+
+       #menu{
+           display:block;
+       }
+    </style>
+</head>
+<body>
+    <div id="fileSystem">
+        <div id="tree">
+
+        </div>
+        <div id="fileInfoPanel">
+            <div id="path">当前位置<span id="pathString"></span></div><br/>
+            <div id="menu">
+                <div class="menuList">根目录</div>
+                <div class="menuList">向上</div>
+                <div class="menuList">刷新</div>
+                <div class="menuList">复制</div>
+                <div class="menuList">剪切</div>
+                <div class="menuList">粘贴</div>
+                <div class="menuList">删除</div>
+                <div class="menuList">上传</div>
+                <div class="menuList">下载</div>
+            </div>
+           
+            <div id="fileListHead" style="width:1000px">
+                
+                <div id="selectAll" style="width:60px;">
+                    <input type="checkbox" title="全部选择" />
+                </div>
+                <div class="fileList" style="width:360px">文件名</div>
+                <div class="fileList" style="width:250px">大小</div>
+                <div class="fileList" style="width:200px">最后更新</div>
+                <div class="fileList" style="width:100px">重命名</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
