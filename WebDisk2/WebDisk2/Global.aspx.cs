@@ -34,7 +34,7 @@ namespace WebDisk2
             string value = Request.QueryString["value1"];
             string path = Server.MapPath(value);
 
-            StringBuilder sb = new StringBuilder("{\"Directory\":[", 500);
+            StringBuilder sb = new StringBuilder("var GetList={\"Directory\":[", 500);
             DirectoryInfo info = new DirectoryInfo(path);
 
             //记录当前位置文件夹信息
@@ -76,6 +76,7 @@ namespace WebDisk2
             sb.Append("]}");
 
             //返回json格式数组
+            //Response.Write(sb.ToString());
             Response.Write(sb.ToString());
 
         }

@@ -3,56 +3,109 @@
 <head>
     <meta charset="utf-8" />
     <title>在线文件管理系统</title>
-    <link href="Views/htmlCss.css" rel="stylesheet" type="text/css" />
-    <style>
-       
-        #selectAll{
-            
-            width:30px;
-        }
 
-        body {
-            padding: 0px;
-            margin: 0px;
-            width: 1000px;
-            font-size: 10px;
-        }
+    <script src="Scripts/Ajax.js" type="text/javascript"></script>
+    <script src="Scripts/Common.js" type="text/javascript"></script>
+    <script src="Scripts/Dialog.js" type="text/javascript"></script>
+    <script src="Scripts/Tree.js" type="text/javascript"></script>
 
-       #menu{
-           display:block;
-       }
-    </style>
+    <link href="images/dialog/Dialog.css" rel="stylesheet" type="text/css" />
+    <link href="css/WebExplorer.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-    <div id="fileSystem">
+    <div id="fileExplorer">
         <div id="tree">
-
         </div>
-        <div id="fileInfoPanel">
-            <div id="path">当前位置<span id="pathString"></span></div><br/>
+        <div id="rightPanel">
+            <div id="path">
+                当前位置：<span id="pathString"></span>
+            </div>
+            <hr />
+            <!-- 这里是菜单开始 -->
             <div id="menu">
-                <div class="menuList">根目录</div>
-                <div class="menuList">向上</div>
-                <div class="menuList">刷新</div>
-                <div class="menuList">复制</div>
-                <div class="menuList">剪切</div>
-                <div class="menuList">粘贴</div>
-                <div class="menuList">删除</div>
-                <div class="menuList">上传</div>
-                <div class="menuList">下载</div>
-            </div>
-           
-            <div id="fileListHead" style="width:1000px">
-                
-                <div id="selectAll" style="width:60px;">
-                    <input type="checkbox" title="全部选择" />
+                <div class="menuItem" onclick="javascript:gotoParentDirectory();">
+                    <img class="menuItemImg" src="images/up.gif" />
+                    <div class="tipText">
+                        向上
+                    </div>
                 </div>
-                <div class="fileList" style="width:360px">文件名</div>
-                <div class="fileList" style="width:250px">大小</div>
-                <div class="fileList" style="width:200px">最后更新</div>
-                <div class="fileList" style="width:100px">重命名</div>
+                <div class="menuItem" onclick="javascrip:goRoot();">
+                    <img class="menuItemImg" src="images/home.gif" />
+                    <div class="tipText">
+                        根目录
+                    </div>
+                </div>
+                <div class="menuItem" onclick="javascript:refersh()">
+                    <img class="menuItemImg" src="images/refersh.gif" />
+                    <div class="tipText">
+                        刷新
+                    </div>
+                </div>
+                <div class="menuItem" onclick="javascript:newDirectory();">
+                    <img class="menuItemImg" src="images/newfolder.gif" />
+                    <div class="tipText">
+                        新目录
+                    </div>
+                </div>
+                <div class="menuItem" onclick="javascript:newFile();">
+                    <img class="menuItemImg" src="images/newfile.gif" />
+                    <div class="tipText">
+                        新文件
+                    </div>
+                </div>
+                <div class="menuItem" onclick="javascript:del();">
+                    <img class="menuItemImg" src="images/delete.gif" />
+                    <div class="tipText">
+                        删除
+                    </div>
+                </div>
+                
+                <div class="menuItem" onclick="javascript:downLoad();">
+                    <img class="menuItemImg" src="images/download.gif" />
+                    <div class="tipText">
+                        下载
+                    </div>
+                </div>
+                <div class="menuItem" onclick="javascript:uploadFile();">
+                    <img class="menuItemImg" src="images/upload.gif" />
+                    <div class="tipText">
+                        上传
+                    </div>
+                </div>
+                <div style="clear: both">
+                </div>
             </div>
+            <!-- 这里是菜单结束 -->
+            <!-- 这里是文件列表开始 -->
+            <div id="fileListHead">
+                <div class="chkColumn">
+                    <input type="checkbox" id="checkAll" onclick="javascript:selectAll();" title="全部选中" />
+                </div>
+                <div class="fileType">
+                    类型
+                </div>
+                <div class="fileName">
+                    名称
+                </div>
+                <div class="fileSize">
+                    大小
+                </div>
+                <div class="lastUpdate">
+                    最后更新
+                </div>
+                <div class="rename">
+                    重命名
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+
+            <div id="fileList">     </div>
+            <!-- 这里是文件列表结束 -->
         </div>
     </div>
+
+    <script src="Scripts/WebExplorerMain.js" type="text/javascript"></script>
 </body>
 </html>

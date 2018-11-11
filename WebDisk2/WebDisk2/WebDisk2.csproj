@@ -54,6 +54,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -184,8 +185,12 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DownLoadFile.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global.ashx.cs">
+      <DependentUpon>Global.ashx</DependentUpon>
     </Compile>
     <Compile Include="Global.aspx.cs">
       <DependentUpon>Global.aspx</DependentUpon>
@@ -202,12 +207,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\qq.txt" />
+    <Content Include="css\WebExplorer.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Global.aspx" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
@@ -230,14 +235,102 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\ai.gif" />
+    <Content Include="images\asax.gif" />
+    <Content Include="images\ascx.gif" />
+    <Content Include="images\ashx.gif" />
+    <Content Include="images\asmx.gif" />
+    <Content Include="images\aspx.gif" />
+    <Content Include="images\avi.gif" />
+    <Content Include="images\bat.gif" />
+    <Content Include="images\bmp.gif" />
+    <Content Include="images\cab.gif" />
+    <Content Include="images\chm.gif" />
+    <Content Include="images\cmd.gif" />
+    <Content Include="images\config.gif" />
+    <Content Include="images\copy.gif" />
+    <Content Include="images\cs.gif" />
+    <Content Include="images\css.gif" />
+    <Content Include="images\cut.gif" />
+    <Content Include="images\db.gif" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\dialog\btnpanel_bg.gif" />
+    <Content Include="images\dialog\btn_bg.gif" />
+    <Content Include="images\dialog\close_highlight.png" />
+    <Content Include="images\dialog\close_normal.png" />
+    <Content Include="images\dialog\Dialog.css" />
+    <Content Include="images\dialog\icon.png" />
+    <Content Include="images\dialog\mask.gif" />
+    <Content Include="images\dialog\mask.png" />
+    <Content Include="images\dialog\title_bg.gif" />
+    <Content Include="images\dir.gif" />
+    <Content Include="images\dll.gif" />
+    <Content Include="images\doc.gif" />
+    <Content Include="images\download.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\empty.gif" />
+    <Content Include="images\exe.gif" />
+    <Content Include="images\fla.gif" />
+    <Content Include="images\folder.gif" />
+    <Content Include="images\gif.gif" />
+    <Content Include="images\hlp.gif" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\htm.gif" />
+    <Content Include="images\html.gif" />
+    <Content Include="images\ini.gif" />
+    <Content Include="images\iso.gif" />
+    <Content Include="images\jpg.gif" />
+    <Content Include="images\js.gif" />
+    <Content Include="images\log.gif" />
+    <Content Include="images\master.gif" />
+    <Content Include="images\mdb.gif" />
+    <Content Include="images\minus_m.gif" />
+    <Content Include="images\mp3.gif" />
+    <Content Include="images\msi.gif" />
+    <Content Include="images\newfile.gif" />
+    <Content Include="images\newfolder.gif" />
+    <Content Include="images\paste.gif" />
+    <Content Include="images\pdb.gif" />
+    <Content Include="images\pdf.gif" />
+    <Content Include="images\plus_m.gif" />
+    <Content Include="images\png.gif" />
+    <Content Include="images\ppt.gif" />
+    <Content Include="images\process.gif" />
+    <Content Include="images\rar.gif" />
+    <Content Include="images\refersh.gif" />
+    <Content Include="images\rename.gif" />
+    <Content Include="images\resx.gif" />
+    <Content Include="images\rm.gif" />
+    <Content Include="images\rmvb.gif" />
+    <Content Include="images\rtf.gif" />
+    <Content Include="images\sln.gif" />
+    <Content Include="images\swf.gif" />
+    <Content Include="images\ttf.gif" />
+    <Content Include="images\txt.gif" />
+    <Content Include="images\unknow.gif" />
+    <Content Include="images\unzip.gif" />
+    <Content Include="images\up.gif" />
+    <Content Include="images\upload.gif" />
+    <Content Include="images\vsd.gif" />
+    <Content Include="images\wma.gif" />
+    <Content Include="images\wmv.gif" />
+    <Content Include="images\xaml.gif" />
+    <Content Include="images\xap.gif" />
+    <Content Include="images\xls.gif" />
+    <Content Include="images\xlst.gif" />
+    <Content Include="images\xml.gif" />
+    <Content Include="images\xsd.gif" />
+    <Content Include="images\xsx.gif" />
+    <Content Include="images\zip.gif" />
+    <Content Include="images\zipfile.gif" />
+    <Content Include="Scripts\Ajax.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\Dialog.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\Tree.js" />
+    <Content Include="Scripts\WebExplorerMain.js" />
     <Content Include="Views\htmlCss.css" />
     <Content Include="welcome.html" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -282,9 +375,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.ashx" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

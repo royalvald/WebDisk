@@ -11,3 +11,11 @@ G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFil
 G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CopyComplete
 G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
 G:\在线文件管理模块最终代码\最终版本code\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll.config
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.pdb
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csprojAssemblyReference.cache
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CoreCompileInputs.cache
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CopyComplete
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
+G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb

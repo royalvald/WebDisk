@@ -121,14 +121,14 @@ function TreeNode()
                 return;
             }
 
-            try
+            //try
             {
                 window.eval(result);
             }
-            catch (e)
-            {
-                window.location.href = "../../logon.aspx";
-            }
+            //catch (e)
+            //{
+            //    window.location.href = "../../logon.aspx";
+            //}
 
             this.folders = GetList.Directory;
             this.files = GetList.File;
