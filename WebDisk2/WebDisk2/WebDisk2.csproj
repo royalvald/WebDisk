@@ -330,7 +330,7 @@
     <Content Include="Scripts\Tree.js" />
     <Content Include="Scripts\WebExplorerMain.js" />
     <Content Include="Views\htmlCss.css" />
-    <Content Include="welcome.html" />
+    <Content Include="welcome.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

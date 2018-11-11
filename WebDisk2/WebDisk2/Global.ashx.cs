@@ -21,12 +21,13 @@ namespace WebDisk2
             context.Response.Expires = 0;
             context.Response.AddHeader("Pragma", "No-Cache");
             string action = context.Request["action"];//获取操作类型
-            
-            switch(action)
+
+            switch (action)
             {
                 case "LIST": ReturnFileList(context); break;
                 case "DOWNLOAD": DownloadFiles(context); break;
                 case "UPLOAD": UploadFile(context); break;
+                case "DELETE": DeleteFile(context); break;
             }
         }
 
@@ -45,13 +46,13 @@ namespace WebDisk2
             string value = context.Request["value1"];
             string path = context.Server.MapPath(value);
 
-            StringBuilder sb = new StringBuilder("{\"Directory\":[", 500);
+            StringBuilder sb = new StringBuilder("var GetList={\"Directory\":[", 500);
             DirectoryInfo info = new DirectoryInfo(path);
 
             //记录当前位置文件夹信息
             foreach (var item in info.GetDirectories())
             {
-                sb.Append("{\"Name\":\"" + item.LastAccessTime + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
+                sb.Append("{\"Name\":\"" + item.Name + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
                     + "\"},");
             }
 
@@ -62,7 +63,7 @@ namespace WebDisk2
                 tempString = tempString.Substring(0, tempString.Length - 1);
             }
             sb = new StringBuilder(tempString, 600);
-            sb.Append("]\"File\":[");
+            sb.Append("],\"File\":[");
 
 
             foreach (var item in info.GetFiles())
@@ -75,7 +76,7 @@ namespace WebDisk2
                 else if (item.Length > 1024)
                     size = (item.Length / 1024).ToString() + "KB";
 
-                sb.Append("{\"Name\":\"" + item.LastAccessTime + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
+                sb.Append("{\"Name\":\"" + item.Name + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
                     + "\",\"Size\":\"" + size + "\"},");
             }
             tempString = sb.ToString();
@@ -88,7 +89,7 @@ namespace WebDisk2
 
             //返回json格式数组
             //Response.Write(sb.ToString());
-           context.Response.Write(sb.ToString());
+            context.Response.Write(sb.ToString());
 
         }
         #endregion
@@ -115,7 +116,36 @@ namespace WebDisk2
         #region 文件上传
         private void UploadFile(HttpContext context)
         {
+            string requestDir = context.Request["value1"];
+            string fullDirPath = context.Server.MapPath(requestDir);
+            var files = context.Request.Files;
 
+            for (int i = 0; i < files.Count; i++)
+            {
+                files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+            }
+
+            context.Response.Write("OK");
+        }
+        #endregion
+
+        #region 文件删除
+        private void DeleteFile(HttpContext context)
+        {
+            string value = context.Request["value1"];
+            string[] deleteFilesCollection = value.Split('|');
+
+            foreach (var item in deleteFilesCollection)
+            {
+                string tempFilePath = context.Server.MapPath(item);
+                //文件删除,文件夹删除
+                if (File.Exists(tempFilePath))
+                    File.Delete(tempFilePath);
+                else if (Directory.Exists(tempFilePath))
+                    Directory.Delete(tempFilePath);
+            }
+
+            context.Response.Write("OK");
         }
         #endregion
     }

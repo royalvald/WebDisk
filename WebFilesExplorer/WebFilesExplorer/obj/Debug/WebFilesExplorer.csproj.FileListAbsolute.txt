@@ -19,3 +19,11 @@ G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFile
 G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CopyComplete
 G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
 G:\网盘设计\demo\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll.config
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.dll
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\bin\WebFilesExplorer.pdb
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csprojAssemblyReference.cache
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CoreCompileInputs.cache
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.csproj.CopyComplete
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.dll
+E:\webFile\WebDisk\WebFilesExplorer\WebFilesExplorer\obj\Debug\WebFilesExplorer.pdb
