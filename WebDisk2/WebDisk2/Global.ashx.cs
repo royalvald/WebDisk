@@ -28,6 +28,9 @@ namespace WebDisk2
                 case "DOWNLOAD": DownloadFiles(context); break;
                 case "UPLOAD": UploadFile(context); break;
                 case "DELETE": DeleteFile(context); break;
+                case "COPY": MoveFile(context, true); break;
+                case "CUT": MoveFile(context, false); break;
+                case "RENAME": Rename(context); break;
             }
         }
 
@@ -147,6 +150,80 @@ namespace WebDisk2
 
             context.Response.Write("OK");
         }
+        #endregion
+
+        #region 文件(夹)复制和剪切
+        /// <summary>
+        /// /flag为true时代表是文件复制，为false时代表是文件剪切
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="flag"></param>
+        private void MoveFile(HttpContext context, bool flag)
+        {
+            //获取请求内容value1和value2
+
+            //目的文件夹
+            string value = context.Request["value1"];
+            string desFolder = context.Server.MapPath(value);
+
+            //待复制（粘贴）文件信息
+            string fileInfo = context.Request["value2"];
+            //可能多个文件信息以'|'分割
+            string[] fileList = fileInfo.Split('|');
+
+            foreach (var item in fileList)
+            {
+                if (File.Exists(item))
+                {
+                    if (flag == true)
+                        File.Copy(item, desFolder + Path.GetFileName(item));
+                    else if (flag == false)
+                        File.Move(item, desFolder + Path.GetFileName(item));
+                }
+                else if (Directory.Exists(item))
+                {
+                    if (flag == true)
+                        DirCopy(item, desFolder + Path.GetFileName(item));
+                    else if (flag == false)
+                        Directory.Move(item, desFolder + Path.GetFileName(item));
+                }
+            }
+
+            context.Response.Write("OK");
+        }
+
+        //文件夹复制
+        private void DirCopy(string sourcePath, string desFolder)
+        {
+            string desPath = desFolder + Path.GetFileName(sourcePath);
+            Directory.CreateDirectory(desPath);
+            DirectoryInfo info = new DirectoryInfo(sourcePath);
+
+            foreach (var item in info.GetFiles())
+            {
+                File.Copy(item.FullName, desPath + "\\" + Path.GetFileName(item.Name));
+            }
+
+            foreach (var item in info.GetDirectories())
+            {
+                DirCopy(item.FullName, desPath + "\\" + Path.GetFileName(item.Name));
+            }
+
+        }
+        #endregion
+
+        #region 文件重命名
+
+        private void Rename(HttpContext context)
+        {
+            string oldFile = context.Server.MapPath(context.Request["value1"]);
+            string newFile = context.Server.MapPath(context.Request["value2"]);
+            if (File.Exists(oldFile))
+                File.Move(oldFile, newFile);
+            else if (Directory.Exists(oldFile))
+                Directory.Move(oldFile, newFile);
+        }
+
         #endregion
     }
 }
