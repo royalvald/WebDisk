@@ -33,7 +33,7 @@ function TreeNode() {
         for (var i = 0; i < this.depth - 1; i++) {
             this.container.appendChild(createImage(image.Empty));
         }
-
+        //全局变量
         this.imgPlus = createImage(image.Plus);
         this.imgPlus.onclick = self.clickNode;
         try { this.imgPlus.style.cursor = "pointer"; } catch (e) { this.imgPlus.style.cursor = "hand"; }
