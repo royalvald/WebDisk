@@ -72,7 +72,7 @@ function TreeNode() {
     this.GotoParentNode = function () {
         if (currentNode.parent != null) {
             currentNode.ClearCurrentStatus();
-            currentNode = currentNode.parent
+            currentNode = currentNode.parent;
             currentNode.SetCurrentStatus();
             currentNode.childArea.innerHTML = "";
             currentNode.childArea.style.display = "none";
