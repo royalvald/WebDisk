@@ -43,7 +43,7 @@ namespace FileXmlRecord
                 element.SetAttribute("name", Path.GetFileName(path));
                 element.SetAttribute("type", "Directory");
                 document.AppendChild(element);
-                DirToXml(path, element,document);
+                DirToXml(path, element, document);
             }
             else if (File.Exists(path))
             {
@@ -59,12 +59,12 @@ namespace FileXmlRecord
             return true;
         }
 
-        private void DirToXml(string path, XmlElement element,XmlDocument document)
+        private void DirToXml(string path, XmlElement element, XmlDocument document)
         {
             DirectoryInfo info = new DirectoryInfo(path);
             foreach (var item in info.GetFiles())
             {
-                FilesToXml(item.FullName, element,document);
+                FilesToXml(item.FullName, element, document);
             }
 
 
@@ -76,13 +76,13 @@ namespace FileXmlRecord
                 tempElement.SetAttribute("name", item.Name);
                 tempElement.SetAttribute("type", "Directory");
                 element.AppendChild(tempElement);
-                DirToXml(item.FullName, tempElement,document);
+                DirToXml(item.FullName, tempElement, document);
             }
 
 
         }
 
-        private void FilesToXml(string path, XmlElement element,XmlDocument document)
+        private void FilesToXml(string path, XmlElement element, XmlDocument document)
         {
             //XmlElement xmlElement = (XmlElement)GetXmlElement(document, Path.GetDirectoryName(path));
             FileInfo info = new FileInfo(path);
@@ -116,6 +116,22 @@ namespace FileXmlRecord
             }
 
             return node;
+        }
+
+        public string GetNodeAttribute(string xmlPath, string dirPath, string attributeName)
+        {
+            XmlDocument document = new XmlDocument();
+            document.Load(xmlPath);
+
+            string[] xpath = dirPath.Split('\\');
+            StringBuilder builder = new StringBuilder();
+            foreach (var item in xpath)
+            {
+                builder.Append("//file[@name='" + item + "']");
+            }
+
+            XmlElement element = (XmlElement)document.SelectSingleNode(builder.ToString());
+            return element.GetAttribute(attributeName);
         }
     }
 }
