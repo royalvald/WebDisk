@@ -1,9 +1,11 @@
-﻿using System;
+﻿using FileXmlRecord;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Xml;
 
 namespace WebDisk2
 {
@@ -224,6 +226,37 @@ namespace WebDisk2
                 Directory.Move(oldFile, newFile);
         }
 
+        #endregion
+
+        #region 基于xml版本控制
+        /// <summary>
+        /// 编辑xml
+        /// </summary>
+        /// <param name="document"></param>
+        /// <param name="filePath"></param>
+        /// <param name="attribute"></param>
+        /// <returns></returns>
+        //private bool EditFilelist(XmlDocument document,string filePath,string attribute)
+        //{
+           // FileToXml xml = new FileToXml();
+           // xml.GetNodeAttribute(document, filePath, attribute);
+        //}
+
+        private bool EditFilelist(string xmlPath, string filePath, string attribute,string value)
+        {
+            XmlDocument document = new XmlDocument();
+            document.Load(xmlPath);
+
+            FileToXml xml = new FileToXml();
+            xml.SetNodeAttribute(document, filePath, attribute, value);
+            return true;
+        }
+
+
+        private void GenerateXmlFile(string filePath,string xmlSavePath)
+        {
+            FileToXml xml = new FileToXml(filePath, xmlSavePath);
+        }
         #endregion
     }
 }
