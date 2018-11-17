@@ -42,6 +42,7 @@ namespace FileXmlRecord
                 XmlElement element = document.CreateElement("file");
                 element.SetAttribute("name", Path.GetFileName(path));
                 element.SetAttribute("type", "Directory");
+                element.SetAttribute("src", Path.GetFullPath(path));
                 document.AppendChild(element);
                 DirToXml(path, element, document);
             }
@@ -53,6 +54,7 @@ namespace FileXmlRecord
                 element.SetAttribute("size", info.Length.ToString());
                 element.SetAttribute("lastModify", info.LastWriteTime.ToString());
                 element.SetAttribute("type", "File");
+                element.SetAttribute("src", info.FullName);
                 document.AppendChild(element);
             }
             document.Save(SavaPath);
@@ -75,6 +77,7 @@ namespace FileXmlRecord
                 XmlElement tempElement = document.CreateElement("file");
                 tempElement.SetAttribute("name", item.Name);
                 tempElement.SetAttribute("type", "Directory");
+                tempElement.SetAttribute("src", item.FullName);
                 element.AppendChild(tempElement);
                 DirToXml(item.FullName, tempElement, document);
             }
@@ -91,6 +94,7 @@ namespace FileXmlRecord
             tempElement.SetAttribute("type", "File");
             tempElement.SetAttribute("size", info.Length.ToString());
             tempElement.SetAttribute("lastModify", info.LastWriteTime.ToString());
+            tempElement.SetAttribute("src", info.FullName);
 
             element.AppendChild(tempElement);
 

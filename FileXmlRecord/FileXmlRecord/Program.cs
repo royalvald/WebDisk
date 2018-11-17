@@ -12,7 +12,7 @@ namespace FileXmlRecord
     {
         static void Main(string[] args)
         {
-            FileToXml xml = new FileToXml(@"H:\JavaScriptWriting", @"H:\test.xml");
+            FileToXml xml = new FileToXml(@"E:\Shadowsocks-4.1.2", @"F:\test.xml");
             
         }
     }
