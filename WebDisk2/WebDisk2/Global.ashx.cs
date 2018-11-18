@@ -14,7 +14,7 @@ namespace WebDisk2
     /// </summary>
     public class Global1 : IHttpHandler
     {
-
+        string rootPath = "UP/";
         public void ProcessRequest(HttpContext context)
         {
             //context.Response.ContentType = "text/plain";
@@ -24,9 +24,10 @@ namespace WebDisk2
             context.Response.AddHeader("Pragma", "No-Cache");
             string action = context.Request["action"];//获取操作类型
 
+
             switch (action)
             {
-                case "LIST": ReturnFileList(context); break;
+                case "LIST": ReturnFileList(context,true); break;
                 case "DOWNLOAD": DownloadFiles(context); break;
                 case "UPLOAD": UploadFile(context); break;
                 case "DELETE": DeleteFile(context); break;
@@ -97,6 +98,87 @@ namespace WebDisk2
             context.Response.Write(sb.ToString());
 
         }
+
+        private void ReturnFileList(HttpContext context, bool tag)
+        {
+            //string value = Request.QueryString["value1"];
+
+            string value = context.Request["value1"];
+            string path = context.Server.MapPath(value);
+
+            FileToXml xml = new FileToXml();
+            XmlDocument document = new XmlDocument();
+            if (File.Exists("./test.xml"))
+                document.Load("./test.xml");
+            else
+            {
+                FileToXml tempXml = new FileToXml(context.Server.MapPath("./UP"), context.Server.MapPath("./test.xml"));
+                document.Load(context.Server.MapPath("./test.xml"));
+            }
+            StringBuilder sb = new StringBuilder("var GetList={\"Directory\":[", 500);
+            DirectoryInfo info = new DirectoryInfo(path);
+
+            //记录当前位置文件夹信息
+            /*foreach (var item in info.GetDirectories())
+            {
+                sb.Append("{\"Name\":\"" + item.Name + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
+                    + "\"},");
+            }*/
+
+            string xmlPath = value.Substring(2, value.Length-3);
+            
+            XmlNode node = xml.GetXmlElement(document, xmlPath.Replace('/','\\'));
+            XmlNodeList list = node.ChildNodes;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Attributes["type"].Value.Equals("Directory"))
+                    sb.Append("{\"Name\":\"" + list[i].Attributes["name"].Value + "\"," + "\"LastWriteTime\":\"" + list[i].Attributes["lastModify"].Value
+                    + "\"},");
+            }
+            //去掉最后多余的逗号（','）
+            string tempString = sb.ToString();
+            if (tempString.EndsWith(","))
+            {
+                tempString = tempString.Substring(0, tempString.Length - 1);
+            }
+            sb = new StringBuilder(tempString, 600);
+            sb.Append("],\"File\":[");
+
+
+            /*foreach (var item in info.GetFiles())
+            {
+                string size = string.Empty;
+                if (item.Length > 1024000000)
+                    size = (item.Length / 1024000000).ToString() + "GB";
+                else if (item.Length > 1024000)
+                    size = (item.Length / 1024000).ToString() + "MB";
+                else if (item.Length > 1024)
+                    size = (item.Length / 1024).ToString() + "KB";
+
+                sb.Append("{\"Name\":\"" + item.Name + "\"," + "\"LastWriteTime\":\"" + item.LastWriteTime
+                    + "\",\"Size\":\"" + size + "\"},");
+            }*/
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Attributes["type"].Value.Equals("File"))
+                    sb.Append("{\"Name\":\"" + list[i].Attributes["name"].Value + "\"," + "\"LastWriteTime\":\"" + list[i].Attributes["lastModify"].Value
+                    + "\",\"Size\":\"" + list[i].Attributes["size"].Value + "\"},");
+            }
+
+            tempString = sb.ToString();
+            if (tempString.EndsWith(","))
+            {
+                tempString = tempString.Substring(0, tempString.Length - 1);
+            }
+            sb = new StringBuilder(tempString, 600);
+            sb.Append("]}");
+
+            //返回json格式数组
+            //Response.Write(sb.ToString());
+            context.Response.Write(sb.ToString());
+
+        }
         #endregion
 
         #region 文件下载
@@ -124,10 +206,17 @@ namespace WebDisk2
             string requestDir = context.Request["value1"];
             string fullDirPath = context.Server.MapPath(requestDir);
             var files = context.Request.Files;
-
+            string LogPath = context.Server.MapPath(rootPath) + System.DateTime.Now.ToString();
+            Directory.CreateDirectory(LogPath);
             for (int i = 0; i < files.Count; i++)
             {
-                files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+                if (File.Exists(fullDirPath + Path.GetFileName(files[i].FileName)))
+                {
+                    //File.Move(fullDirPath + Path.GetFileName(files[i].FileName),)
+                    files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+                }
+                else
+                    files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
             }
 
             context.Response.Write("OK");
@@ -238,11 +327,11 @@ namespace WebDisk2
         /// <returns></returns>
         //private bool EditFilelist(XmlDocument document,string filePath,string attribute)
         //{
-           // FileToXml xml = new FileToXml();
-           // xml.GetNodeAttribute(document, filePath, attribute);
+        // FileToXml xml = new FileToXml();
+        // xml.GetNodeAttribute(document, filePath, attribute);
         //}
 
-        private bool EditFilelist(string xmlPath, string filePath, string attribute,string value)
+        private bool EditFilelist(string xmlPath, string filePath, string attribute, string value)
         {
             XmlDocument document = new XmlDocument();
             document.Load(xmlPath);
@@ -253,7 +342,7 @@ namespace WebDisk2
         }
 
 
-        private void GenerateXmlFile(string filePath,string xmlSavePath)
+        private void GenerateXmlFile(string filePath, string xmlSavePath)
         {
             FileToXml xml = new FileToXml(filePath, xmlSavePath);
         }

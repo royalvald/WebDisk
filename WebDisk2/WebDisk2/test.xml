@@ -1,0 +1,200 @@
+<file name="UP" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP" lastModify="2018/11/11 17:11:54">
+  <file name="文件传输" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输" lastModify="2018/11/11 17:11:54">
+    <file name="2010.10.12" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12" lastModify="2018/11/11 17:11:54">
+      <file name="ReceiveFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile" lastModify="2018/11/11 17:11:54">
+        <file name="ReceiveFile.sln" type="File" size="1132" lastModify="2018/10/13 16:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile.sln" />
+        <file name="ReceiveFile.suo" type="File" size="12800" lastModify="2010/10/12 17:35:20" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile.suo" />
+        <file name="UpgradeLog.htm" type="File" size="41272" lastModify="2018/10/13 16:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\UpgradeLog.htm" />
+        <file name=".vs" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs" lastModify="2018/11/11 17:11:54">
+          <file name="ReceiveFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile" lastModify="2018/11/11 17:11:54">
+            <file name="v15" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15" lastModify="2018/11/11 17:11:54">
+              <file name=".suo" type="File" size="27648" lastModify="2018/10/13 16:49:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\.suo" />
+              <file name="Server" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server" lastModify="2018/11/11 17:11:54">
+                <file name="sqlite3" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server\sqlite3" lastModify="2018/11/11 17:11:54">
+                  <file name="db.lock" type="File" size="0" lastModify="2018/10/13 16:35:05" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server\sqlite3\db.lock" />
+                  <file name="storage.ide" type="File" size="4096" lastModify="2018/10/13 16:35:05" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server\sqlite3\storage.ide" />
+                  <file name="storage.ide-shm" type="File" size="32768" lastModify="2018/10/13 16:35:05" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server\sqlite3\storage.ide-shm" />
+                  <file name="storage.ide-wal" type="File" size="552112" lastModify="2018/10/13 16:35:07" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\.vs\ReceiveFile\v15\Server\sqlite3\storage.ide-wal" />
+                </file>
+              </file>
+            </file>
+          </file>
+        </file>
+        <file name="Backup" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup" lastModify="2018/11/11 17:11:54">
+          <file name="ReceiveFile.sln" type="File" size="922" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile.sln" />
+          <file name="ReceiveFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile" lastModify="2018/11/11 17:11:54">
+            <file name="Form1.cs" type="File" size="4837" lastModify="2010/10/12 17:22:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Form1.cs" />
+            <file name="Form1.Designer.cs" type="File" size="5583" lastModify="2010/10/12 17:20:58" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Form1.Designer.cs" />
+            <file name="Form1.resx" type="File" size="6017" lastModify="2010/10/12 17:20:58" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Form1.resx" />
+            <file name="Program.cs" type="File" size="470" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Program.cs" />
+            <file name="ReceiveFile.csproj" type="File" size="3229" lastModify="2010/10/12 17:20:58" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\ReceiveFile.csproj" />
+            <file name="obj" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj" lastModify="2018/11/12 8:41:27">
+              <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj\Debug" lastModify="2018/11/12 8:41:27">
+                <file name="ReceiveFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj\Debug\ReceiveFile.csproj.CoreCompileInputs.cache" />
+                <file name="ReceiveFile.csprojAssemblyReference.cache" type="File" size="8145" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj\Debug\ReceiveFile.csprojAssemblyReference.cache" />
+              </file>
+              <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj\Release" lastModify="2018/11/12 8:41:27">
+                <file name="ReceiveFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\obj\Release\ReceiveFile.csproj.CoreCompileInputs.cache" />
+              </file>
+            </file>
+            <file name="Properties" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties" lastModify="2018/11/12 8:41:27">
+              <file name="AssemblyInfo.cs" type="File" size="1170" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties\AssemblyInfo.cs" />
+              <file name="Resources.Designer.cs" type="File" size="2878" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties\Resources.Designer.cs" />
+              <file name="Resources.resx" type="File" size="5612" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties\Resources.resx" />
+              <file name="Settings.Designer.cs" type="File" size="1096" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties\Settings.Designer.cs" />
+              <file name="Settings.settings" type="File" size="249" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\Backup\ReceiveFile\Properties\Settings.settings" />
+            </file>
+          </file>
+        </file>
+        <file name="ReceiveFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile" lastModify="2018/11/11 17:11:54">
+          <file name="Form1.cs" type="File" size="4837" lastModify="2010/10/12 17:22:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Form1.cs" />
+          <file name="Form1.Designer.cs" type="File" size="5583" lastModify="2010/10/12 17:20:58" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Form1.Designer.cs" />
+          <file name="Form1.resx" type="File" size="6017" lastModify="2010/10/12 17:20:58" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Form1.resx" />
+          <file name="Program.cs" type="File" size="470" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Program.cs" />
+          <file name="ReceiveFile.csproj" type="File" size="3497" lastModify="2018/10/13 16:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\ReceiveFile.csproj" />
+          <file name="bin" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin" lastModify="2018/11/11 17:11:54">
+            <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Debug" lastModify="2018/11/11 17:11:54">
+              <file name="ReceiveFile.vshost.exe" type="File" size="5632" lastModify="2005/12/8 14:51:38" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Debug\ReceiveFile.vshost.exe" />
+            </file>
+            <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Release" lastModify="2018/11/11 17:11:54">
+              <file name="ReceiveFile.exe" type="File" size="24576" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Release\ReceiveFile.exe" />
+              <file name="ReceiveFile.pdb" type="File" size="24064" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Release\ReceiveFile.pdb" />
+              <file name="ReceiveFile.vshost.exe" type="File" size="5632" lastModify="2005/12/8 14:51:38" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\bin\Release\ReceiveFile.vshost.exe" />
+            </file>
+          </file>
+          <file name="obj" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj" lastModify="2018/11/11 17:11:54">
+            <file name="ReceiveFile.csproj.FileListAbsolute.txt" type="File" size="672" lastModify="2010/10/12 17:35:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\ReceiveFile.csproj.FileListAbsolute.txt" />
+            <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Debug" lastModify="2018/11/11 17:11:54">
+              <file name="ReceiveFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Debug\ReceiveFile.csproj.CoreCompileInputs.cache" />
+              <file name="ReceiveFile.csprojAssemblyReference.cache" type="File" size="6849" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Debug\ReceiveFile.csprojAssemblyReference.cache" />
+              <file name="Refactor" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Debug\Refactor" lastModify="2018/11/12 8:41:27" />
+              <file name="TempPE" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Debug\TempPE" lastModify="2018/11/12 8:41:27" />
+            </file>
+            <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release" lastModify="2018/11/11 17:11:54">
+              <file name="DesignTimeResolveAssemblyReferences.cache" type="File" size="753" lastModify="2018/10/13 16:35:33" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" type="File" size="6116" lastModify="2018/10/13 16:34:59" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+              <file name="ReceiveFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/10/13 16:34:59" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.csproj.CoreCompileInputs.cache" />
+              <file name="ReceiveFile.csproj.GenerateResource.Cache" type="File" size="842" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.csproj.GenerateResource.Cache" />
+              <file name="ReceiveFile.csprojAssemblyReference.cache" type="File" size="6849" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.csprojAssemblyReference.cache" />
+              <file name="ReceiveFile.exe" type="File" size="24576" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.exe" />
+              <file name="ReceiveFile.Form1.resources" type="File" size="180" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.Form1.resources" />
+              <file name="ReceiveFile.pdb" type="File" size="24064" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.pdb" />
+              <file name="ReceiveFile.Properties.Resources.resources" type="File" size="180" lastModify="2010/10/12 17:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\ReceiveFile.Properties.Resources.resources" />
+              <file name="Refactor" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\Refactor" lastModify="2018/11/12 8:41:27" />
+              <file name="TempPE" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\TempPE" lastModify="2018/11/12 8:41:27">
+                <file name="Properties.Resources.Designer.cs.dll" type="File" size="3584" lastModify="2018/10/13 16:35:20" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+              </file>
+            </file>
+          </file>
+          <file name="Properties" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties" lastModify="2018/11/11 17:11:54">
+            <file name="AssemblyInfo.cs" type="File" size="1170" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties\AssemblyInfo.cs" />
+            <file name="Resources.Designer.cs" type="File" size="2857" lastModify="2018/10/13 16:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties\Resources.Designer.cs" />
+            <file name="Resources.resx" type="File" size="5612" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties\Resources.resx" />
+            <file name="Settings.Designer.cs" type="File" size="1111" lastModify="2018/10/13 16:35:00" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties\Settings.Designer.cs" />
+            <file name="Settings.settings" type="File" size="249" lastModify="2010/10/12 16:34:10" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\ReceiveFile\ReceiveFile\Properties\Settings.settings" />
+          </file>
+        </file>
+      </file>
+      <file name="SendFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile" lastModify="2018/11/11 17:11:54">
+        <file name="SendFile.sln" type="File" size="1123" lastModify="2018/10/13 16:38:46" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile.sln" />
+        <file name="SendFile.suo" type="File" size="18432" lastModify="2010/10/13 8:29:46" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile.suo" />
+        <file name="UpgradeLog.htm" type="File" size="40756" lastModify="2018/10/13 16:38:46" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\UpgradeLog.htm" />
+        <file name=".vs" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs" lastModify="2018/11/11 17:11:54">
+          <file name="SendFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile" lastModify="2018/11/11 17:11:54">
+            <file name="v15" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15" lastModify="2018/11/11 17:11:54">
+              <file name=".suo" type="File" size="26112" lastModify="2018/10/13 16:39:25" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\.suo" />
+              <file name="Server" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server" lastModify="2018/11/11 17:11:54">
+                <file name="sqlite3" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server\sqlite3" lastModify="2018/11/11 17:11:54">
+                  <file name="db.lock" type="File" size="0" lastModify="2018/10/13 16:38:51" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server\sqlite3\db.lock" />
+                  <file name="storage.ide" type="File" size="4096" lastModify="2018/10/13 16:38:51" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server\sqlite3\storage.ide" />
+                  <file name="storage.ide-shm" type="File" size="32768" lastModify="2018/10/13 16:38:51" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server\sqlite3\storage.ide-shm" />
+                  <file name="storage.ide-wal" type="File" size="556232" lastModify="2018/10/13 16:38:53" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\.vs\SendFile\v15\Server\sqlite3\storage.ide-wal" />
+                </file>
+              </file>
+            </file>
+          </file>
+        </file>
+        <file name="Backup" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup" lastModify="2018/11/11 17:11:54">
+          <file name="SendFile.sln" type="File" size="913" lastModify="2010/10/12 15:34:56" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile.sln" />
+          <file name="SendFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile" lastModify="2018/11/11 17:11:54">
+            <file name="Form1.cs" type="File" size="4284" lastModify="2010/10/12 17:26:34" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Form1.cs" />
+            <file name="Form1.Designer.cs" type="File" size="6544" lastModify="2010/10/12 16:31:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Form1.Designer.cs" />
+            <file name="Form1.resx" type="File" size="6017" lastModify="2010/10/12 16:31:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Form1.resx" />
+            <file name="Program.cs" type="File" size="467" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Program.cs" />
+            <file name="SendFile.csproj" type="File" size="3223" lastModify="2010/10/12 16:31:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\SendFile.csproj" />
+            <file name="obj" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj" lastModify="2018/11/12 8:41:27">
+              <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj\Debug" lastModify="2018/11/12 8:41:27">
+                <file name="SendFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj\Debug\SendFile.csproj.CoreCompileInputs.cache" />
+                <file name="SendFile.csprojAssemblyReference.cache" type="File" size="8145" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj\Debug\SendFile.csprojAssemblyReference.cache" />
+              </file>
+              <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj\Release" lastModify="2018/11/12 8:41:27">
+                <file name="SendFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\obj\Release\SendFile.csproj.CoreCompileInputs.cache" />
+              </file>
+            </file>
+            <file name="Properties" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties" lastModify="2018/11/12 8:41:27">
+              <file name="AssemblyInfo.cs" type="File" size="1164" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties\AssemblyInfo.cs" />
+              <file name="Resources.Designer.cs" type="File" size="2872" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties\Resources.Designer.cs" />
+              <file name="Resources.resx" type="File" size="5612" lastModify="2010/10/12 15:34:50" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties\Resources.resx" />
+              <file name="Settings.Designer.cs" type="File" size="1093" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties\Settings.Designer.cs" />
+              <file name="Settings.settings" type="File" size="249" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\Backup\SendFile\Properties\Settings.settings" />
+            </file>
+          </file>
+        </file>
+        <file name="SendFile" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile" lastModify="2018/11/11 17:11:54">
+          <file name="Form1.cs" type="File" size="4284" lastModify="2010/10/12 17:26:34" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Form1.cs" />
+          <file name="Form1.Designer.cs" type="File" size="6544" lastModify="2010/10/12 16:31:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Form1.Designer.cs" />
+          <file name="Form1.resx" type="File" size="6017" lastModify="2010/10/12 16:31:54" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Form1.resx" />
+          <file name="Program.cs" type="File" size="467" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Program.cs" />
+          <file name="SendFile.csproj" type="File" size="3491" lastModify="2018/10/13 16:38:46" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\SendFile.csproj" />
+          <file name="bin" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin" lastModify="2018/11/11 17:11:54">
+            <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Debug" lastModify="2018/11/11 17:11:54">
+              <file name="SendFile.exe" type="File" size="24576" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Debug\SendFile.exe" />
+              <file name="SendFile.pdb" type="File" size="22016" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Debug\SendFile.pdb" />
+              <file name="SendFile.vshost.exe" type="File" size="5632" lastModify="2005/12/8 14:51:38" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Debug\SendFile.vshost.exe" />
+            </file>
+            <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Release" lastModify="2018/11/11 17:11:54">
+              <file name="SendFile.exe" type="File" size="24576" lastModify="2010/10/12 17:26:36" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Release\SendFile.exe" />
+              <file name="SendFile.pdb" type="File" size="22016" lastModify="2010/10/12 17:26:36" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Release\SendFile.pdb" />
+              <file name="SendFile.vshost.exe" type="File" size="5632" lastModify="2005/12/8 14:51:38" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\bin\Release\SendFile.vshost.exe" />
+            </file>
+          </file>
+          <file name="obj" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj" lastModify="2018/11/11 17:11:54">
+            <file name="SendFile.csproj.FileListAbsolute.txt" type="File" size="1190" lastModify="2010/10/13 8:29:42" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\SendFile.csproj.FileListAbsolute.txt" />
+            <file name="Debug" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug" lastModify="2018/11/11 17:11:54">
+              <file name="DesignTimeResolveAssemblyReferences.cache" type="File" size="753" lastModify="2018/10/13 16:38:53" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" type="File" size="6094" lastModify="2018/10/13 16:38:45" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+              <file name="SendFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/10/13 16:38:45" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.csproj.CoreCompileInputs.cache" />
+              <file name="SendFile.csproj.GenerateResource.Cache" type="File" size="842" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.csproj.GenerateResource.Cache" />
+              <file name="SendFile.csprojAssemblyReference.cache" type="File" size="6849" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.csprojAssemblyReference.cache" />
+              <file name="SendFile.exe" type="File" size="24576" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.exe" />
+              <file name="SendFile.Form1.resources" type="File" size="180" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.Form1.resources" />
+              <file name="SendFile.pdb" type="File" size="22016" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.pdb" />
+              <file name="SendFile.Properties.Resources.resources" type="File" size="180" lastModify="2010/10/13 8:22:06" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\SendFile.Properties.Resources.resources" />
+              <file name="Refactor" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\Refactor" lastModify="2018/11/12 8:41:27" />
+              <file name="TempPE" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\TempPE" lastModify="2018/11/12 8:41:27">
+                <file name="Properties.Resources.Designer.cs.dll" type="File" size="3584" lastModify="2018/10/13 16:38:53" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+              </file>
+            </file>
+            <file name="Release" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release" lastModify="2018/11/11 17:11:54">
+              <file name="SendFile.csproj.CoreCompileInputs.cache" type="File" size="42" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.csproj.CoreCompileInputs.cache" />
+              <file name="SendFile.csproj.GenerateResource.Cache" type="File" size="842" lastModify="2010/10/12 17:26:34" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.csproj.GenerateResource.Cache" />
+              <file name="SendFile.csprojAssemblyReference.cache" type="File" size="6849" lastModify="2018/11/12 8:41:27" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.csprojAssemblyReference.cache" />
+              <file name="SendFile.exe" type="File" size="24576" lastModify="2010/10/12 17:26:36" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.exe" />
+              <file name="SendFile.Form1.resources" type="File" size="180" lastModify="2010/10/12 17:26:34" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.Form1.resources" />
+              <file name="SendFile.pdb" type="File" size="22016" lastModify="2010/10/12 17:26:36" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.pdb" />
+              <file name="SendFile.Properties.Resources.resources" type="File" size="180" lastModify="2010/10/12 17:26:34" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\SendFile.Properties.Resources.resources" />
+              <file name="TempPE" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\obj\Release\TempPE" lastModify="2018/11/12 8:41:27" />
+            </file>
+          </file>
+          <file name="Properties" type="Directory" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties" lastModify="2018/11/11 17:11:54">
+            <file name="AssemblyInfo.cs" type="File" size="1164" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties\AssemblyInfo.cs" />
+            <file name="Resources.Designer.cs" type="File" size="2851" lastModify="2018/10/13 16:38:45" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties\Resources.Designer.cs" />
+            <file name="Resources.resx" type="File" size="5612" lastModify="2010/10/12 15:34:50" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties\Resources.resx" />
+            <file name="Settings.Designer.cs" type="File" size="1108" lastModify="2018/10/13 16:38:46" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties\Settings.Designer.cs" />
+            <file name="Settings.settings" type="File" size="249" lastModify="2010/10/12 15:34:52" src="G:\网盘设计\demo\WebDisk\WebDisk2\WebDisk2\UP\文件传输\2010.10.12\SendFile\SendFile\Properties\Settings.settings" />
+          </file>
+        </file>
+      </file>
+    </file>
+  </file>
+</file>

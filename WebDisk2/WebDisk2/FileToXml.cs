@@ -39,10 +39,12 @@ namespace FileXmlRecord
 
             if (Directory.Exists(path))
             {
+                DirectoryInfo info = new DirectoryInfo(path);
                 XmlElement element = document.CreateElement("file");
                 element.SetAttribute("name", Path.GetFileName(path));
                 element.SetAttribute("type", "Directory");
                 element.SetAttribute("src", Path.GetFullPath(path));
+                element.SetAttribute("lastModify", info.LastWriteTime.ToString());
                 document.AppendChild(element);
                 DirToXml(path, element, document);
             }
@@ -78,6 +80,7 @@ namespace FileXmlRecord
                 tempElement.SetAttribute("name", item.Name);
                 tempElement.SetAttribute("type", "Directory");
                 tempElement.SetAttribute("src", item.FullName);
+                tempElement.SetAttribute("lastModify", info.LastWriteTime.ToString());
                 element.AppendChild(tempElement);
                 DirToXml(item.FullName, tempElement, document);
             }
