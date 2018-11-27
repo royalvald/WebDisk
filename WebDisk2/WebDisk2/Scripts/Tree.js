@@ -136,11 +136,11 @@ function TreeNode() {
         fileContainer.innerHTML = "";
 
         for (var i = 0; i < this.folders.length; i++) {
-            fileContainer.appendChild(createFileView(this.folders[i].Name, true, null, this.folders[i].LastModify));
+            fileContainer.appendChild(createFileView(this.folders[i].Name, true, null, this.folders[i].LastWriteTime));
         }
 
         for (var i = 0; i < this.files.length; i++) {
-            fileContainer.appendChild(createFileView(this.files[i].Name, false, this.files[i].Size, this.files[i].LastModify));
+            fileContainer.appendChild(createFileView(this.files[i].Name, false, this.files[i].Size, this.files[i].LastWriteTime));
         }
 
         //伸展折叠节点
