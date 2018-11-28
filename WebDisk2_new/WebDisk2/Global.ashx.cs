@@ -28,7 +28,7 @@ namespace WebDisk2
 
             switch (action)
             {
-                case "LIST": ReturnFileList(context,true); break;
+                case "LIST": ReturnFileList(context, true); break;
                 case "DOWNLOAD": DownloadFiles(context); break;
                 case "UPLOAD": UploadFile(context); break;
                 case "DELETE": DeleteFile(context); break;
@@ -126,9 +126,9 @@ namespace WebDisk2
                     + "\"},");
             }*/
 
-            string xmlPath = value.Substring(2, value.Length-3);
-            
-            XmlNode node = xml.GetXmlElement(document, xmlPath.Replace('/','\\'));
+            string xmlPath = value.Substring(2, value.Length - 3);
+
+            XmlNode node = xml.GetXmlElement(document, xmlPath.Replace('/', '\\'));
             XmlNodeList list = node.ChildNodes;
             for (int i = 0; i < list.Count; i++)
             {
@@ -196,10 +196,10 @@ namespace WebDisk2
                 string xmlPath = filePath.Substring(2, filePath.Length - 3);
 
                 //XmlNode node = xml.GetXmlElement(document, xmlPath.Replace('/', '\\'));
-                if (xml.NodeIsExisted(xmlRootPath,xmlPath))
+                if (xml.NodeIsExisted(xmlRootPath, xmlPath))
                 {
 
-                    DownloadFile.ResponseFile(xml.GetNodeAttribute(xmlRootPath,item,"src"), context, false);
+                    DownloadFile.ResponseFile(xml.GetNodeAttribute(xmlRootPath, item, "src"), context, false);
                 }
             }
 
@@ -213,17 +213,68 @@ namespace WebDisk2
             string fullDirPath = context.Server.MapPath(requestDir);
             var files = context.Request.Files;
             string LogPath = context.Server.MapPath(rootPath) + System.DateTime.Now.ToString();
+            FileToXml xml = new FileToXml();
+
+
             Directory.CreateDirectory(LogPath);
+            string rootDir = context.Server.MapPath(rootPath);
+            string parentPath = Path.GetDirectoryName(rootDir);
+            //创建时间记录文件夹
+            string trackRoot = parentPath + "/BackTrack";
+            if (!Directory.Exists(trackRoot))
+                Directory.CreateDirectory(trackRoot);
+            string nowTime = System.DateTime.Now.ToString();
+            //需要对获得的时间进行字符串处理
+            string tempTrackPath = trackRoot + nowTime.Replace('/', ' ').Replace(':', '-');
+            Directory.CreateDirectory(tempTrackPath);
+            File.Copy("./test.xml", tempTrackPath + "./test.xml");
+
+            XmlDocument document = new XmlDocument();
+            document.Load("./test.xml");
+            int suffix = 0;
+
             for (int i = 0; i < files.Count; i++)
             {
                 if (File.Exists(fullDirPath + Path.GetFileName(files[i].FileName)))
                 {
+
                     //File.Move(fullDirPath + Path.GetFileName(files[i].FileName),)
-                    files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+                    //files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+
+                    if (File.Exists(tempTrackPath + Path.GetFileName(files[i].FileName)))
+                        while (true)
+                        {
+                            if (File.Exists(tempTrackPath + Path.GetFileName(files[i].FileName) + suffix))
+                                i++;
+                            else
+                            {
+                                files[i].SaveAs(tempTrackPath + Path.GetFileName(files[i].FileName) + suffix);
+                                xml.SetNodeAttribute(document, fullDirPath + Path.GetFileName(files[i].FileName), "src", tempTrackPath + Path.GetFileName(files[i].FileName) + suffix);
+                            }
+                        }
+                    else
+                    {
+                        files[i].SaveAs(tempTrackPath + Path.GetFileName(files[i].FileName));
+                        xml.SetNodeAttribute(document, fullDirPath + Path.GetFileName(files[i].FileName), "src", tempTrackPath + Path.GetFileName(files[i].FileName));
+                    }
+
                 }
                 else
+                {
                     files[i].SaveAs(fullDirPath + Path.GetFileName(files[i].FileName));
+                    FileInfo info = new FileInfo(fullDirPath + Path.GetFileName(files[i].FileName));
+                    XmlElement element = (XmlElement)xml.GetXmlElement(document, fullDirPath);
+                    XmlElement child = document.CreateElement("file");
+                    child.SetAttribute("name", info.Name);
+                    child.SetAttribute("type", "File");
+                    child.SetAttribute("size", info.Length.ToString());
+                    child.SetAttribute("lastModify", info.LastWriteTime.ToString());
+                    child.SetAttribute("src", info.FullName);
+                    element.AppendChild(child);
+                }
             }
+
+            document.Save("./test.xml");
 
             context.Response.Write("OK");
         }
@@ -235,16 +286,37 @@ namespace WebDisk2
             string value = context.Request["value1"];
             string[] deleteFilesCollection = value.Split('|');
 
+            FileToXml xml = new FileToXml();
+            string rootDir = context.Server.MapPath(rootPath);
+            string parentPath = Path.GetDirectoryName(rootDir);
+            string trackRoot = parentPath + "/BackTrack";
+            if (!Directory.Exists(trackRoot))
+                Directory.CreateDirectory(trackRoot);
+            string nowTime = System.DateTime.Now.ToString();
+            //需要对获得的时间进行字符串处理
+            string tempTrackPath = trackRoot + nowTime.Replace('/', ' ').Replace(':', '-');
+            Directory.CreateDirectory(tempTrackPath);
+            File.Copy("./test.xml", tempTrackPath + "./test.xml");
+
+            XmlDocument document = new XmlDocument();
+            document.Load("./test.xml");
             foreach (var item in deleteFilesCollection)
             {
                 string tempFilePath = context.Server.MapPath(item);
                 //文件删除,文件夹删除
                 if (File.Exists(tempFilePath))
-                    File.Delete(tempFilePath);
+                {
+                    //File.Delete(tempFilePath);
+                    xml.DeleteElement(document, tempFilePath);
+                }
                 else if (Directory.Exists(tempFilePath))
-                    Directory.Delete(tempFilePath);
+                {
+                    //Directory.Delete(tempFilePath);
+                    xml.DeleteElement(document, tempFilePath);
+                }
             }
 
+            document.Save("./test.xml");
             context.Response.Write("OK");
         }
         #endregion
