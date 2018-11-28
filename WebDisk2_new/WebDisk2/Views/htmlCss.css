@@ -1,0 +1,13 @@
+﻿
+.fileList {
+    float: left;
+    display: block; 
+    width:40px;
+}
+
+.menuList{
+    float:left;
+    display:block;
+    width:100px;
+    height:80px;
+}
