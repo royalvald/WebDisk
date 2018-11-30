@@ -109,10 +109,14 @@ namespace FileXmlRecord
         /// <param name="document"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public XmlNode GetXmlElement(XmlDocument document, string xpath)
+        public XmlNode GetXmlElement(XmlDocument document, string filePath)
         {
+            string tempPath = null;
             StringBuilder builder = new StringBuilder();
-            string[] paths = xpath.Split('\\');
+            if (filePath.Contains('/'))
+                tempPath = filePath.Replace('/', '\\');
+            else tempPath = filePath;
+            string[] paths = tempPath.Split('\\');
             foreach (var item in paths)
             {
                 builder.Append("//file[@name='" + item + "']");
@@ -126,6 +130,37 @@ namespace FileXmlRecord
             catch (System.Xml.XPath.XPathException e)
             {
                 node = null;
+            }
+
+            return node;
+        }
+
+        public XmlNode GetXmlElement(string xmlPath, string filePath)
+        {
+            XmlNode node = null;
+            XmlDocument document = new XmlDocument();
+            if (File.Exists(xmlPath))
+            {
+                string tempPath = null;
+                StringBuilder builder = new StringBuilder();
+                if (filePath.Contains('/'))
+                    tempPath = filePath.Replace('/', '\\');
+                else tempPath = filePath;
+                string[] paths = tempPath.Split('\\');
+                foreach (var item in paths)
+                {
+                    builder.Append("//file[@name='" + item + "']");
+                }
+                string nodePath = builder.ToString();
+               
+                try
+                {
+                    node = document.SelectSingleNode(nodePath);
+                }
+                catch (System.Xml.XPath.XPathException e)
+                {
+                    node = null;
+                }
             }
 
             return node;
@@ -263,6 +298,24 @@ namespace FileXmlRecord
         {
             XmlDocument document = new XmlDocument();
             document.Load(xmlPath);
+            string tempPath = null;
+            if (filePath.Contains('/'))
+                tempPath = filePath.Replace('/', '\\');
+            else tempPath = filePath;
+            string[] path = tempPath.Split('\\');
+            StringBuilder builder = new StringBuilder();
+            foreach (var item in path)
+            {
+                builder.Append("//file[@name='" + item + "']");
+            }
+            XmlElement element = (XmlElement)document.SelectSingleNode(builder.ToString());
+            if (element == null)
+                return false;
+            else return true;
+        }
+
+        public bool NodeIsExisted(XmlDocument document, string filePath)
+        {            
             string tempPath = null;
             if (filePath.Contains('/'))
                 tempPath = filePath.Replace('/', '\\');

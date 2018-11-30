@@ -340,7 +340,10 @@ namespace WebDisk2
             //可能多个文件信息以'|'分割
             string[] fileList = fileInfo.Split('|');
 
-            foreach (var item in fileList)
+            //时间记录
+            GenerateTrack(context);
+
+            /*foreach (var item in fileList)
             {
                 if (File.Exists(item))
                 {
@@ -356,8 +359,37 @@ namespace WebDisk2
                     else if (flag == false)
                         Directory.Move(item, desFolder + Path.GetFileName(item));
                 }
-            }
+            }*/
+            FileToXml xml = new FileToXml();
+            XmlDocument document = new XmlDocument();
+            document.Load("./test.xml");
+            foreach (var item in fileList)
+            {
+                if (xml.NodeIsExisted("./test.xml", item))
+                {
 
+                    if (flag == true)
+                    {
+                        XmlElement desElement = (XmlElement)xml.GetXmlElement(document, desFolder);
+                        XmlElement sourceElement = (XmlElement)xml.GetXmlElement(document, item);
+                        desElement.AppendChild(sourceElement);
+                        //File.Copy(item, desFolder + Path.GetFileName(item));
+                    }
+                    else if (flag == false)
+                    {
+                        XmlElement desElement = (XmlElement)xml.GetXmlElement(document, desFolder);
+                        XmlElement sourceElement = (XmlElement)xml.GetXmlElement(document, item);
+                        XmlElement copyElement = (XmlElement)sourceElement.Clone();
+                        desElement.AppendChild(copyElement);
+                        string sourceParentPath = Path.GetDirectoryName(item);
+                        XmlElement parentNode = (XmlElement)xml.GetXmlElement(document, sourceParentPath);
+                        parentNode.RemoveChild(sourceElement);
+                    }
+
+                }
+
+            }
+            document.Save("./test.xml");
             context.Response.Write("OK");
         }
 
@@ -385,12 +417,28 @@ namespace WebDisk2
 
         private void Rename(HttpContext context)
         {
+
+            //时间记录
+            GenerateTrack(context);
+
             string oldFile = context.Server.MapPath(context.Request["value1"]);
             string newFile = context.Server.MapPath(context.Request["value2"]);
-            if (File.Exists(oldFile))
+            /*if (File.Exists(oldFile))
                 File.Move(oldFile, newFile);
             else if (Directory.Exists(oldFile))
-                Directory.Move(oldFile, newFile);
+                Directory.Move(oldFile, newFile);*/
+
+            FileToXml xml = new FileToXml();
+            XmlDocument document = new XmlDocument();
+            document.Load("./test.xml");
+
+            if (xml.NodeIsExisted(document, oldFile))
+            { 
+                string newName = Path.GetFileName(newFile);
+                xml.SetNodeAttribute(document, oldFile, "name", newName);
+            }
+
+            document.Save("./test.xml");
         }
 
         #endregion
@@ -420,10 +468,26 @@ namespace WebDisk2
         }
 
 
+        private void GenerateTrack(HttpContext context)
+        {
+            string rootDir = context.Server.MapPath(rootPath);
+            string parentPath = Path.GetDirectoryName(rootDir);
+            //创建时间记录文件夹
+            string trackRoot = parentPath + "/BackTrack";
+            if (!Directory.Exists(trackRoot))
+                Directory.CreateDirectory(trackRoot);
+            string nowTime = System.DateTime.Now.ToString();
+            //需要对获得的时间进行字符串处理
+            string tempTrackPath = trackRoot + nowTime.Replace('/', ' ').Replace(':', '-');
+            Directory.CreateDirectory(tempTrackPath);
+            File.Copy("./test.xml", tempTrackPath + "./test.xml");
+        }
         private void GenerateXmlFile(string filePath, string xmlSavePath)
         {
             FileToXml xml = new FileToXml(filePath, xmlSavePath);
         }
         #endregion
+
+
     }
 }
